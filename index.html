@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary Diary</title>
+    <link rel="stylesheet" href="diaryStyle.css">
+    <!-- Link to your background music file -->
+    <audio id="backgroundMusic" src="music.mp3" preload="auto" loop></audio>
+  </head>
+  <body>
+    <div class="diary-container">
+      <h1>Our Anniversary Diary</h1>
+      <p>Click the button below to start reading and enjoy our special moments with music!</p>
+      
+      <!-- Start Button to initiate music and reading -->
+      <button id="startButton" class="start-button">Start</button>
+
+      <div id="content" style="display: none;"> <!-- Initially hidden content -->
+        <div class="diary-entry">
+          <h2>Day 1: When We Met</h2>
+          <p>
+            I'll never forget the day we met. It was magical, like everything fell into place. Every moment since then has been a blessing. tum kya kaap rahe mein dekh ke pagal ho gaya tha phir jaab mene tumhara hand pakda toh laga ki puri duniya hii tham gayi woo feeling kabhi nhi bhulunga thank u soo much for giving me that type of feeling. I LOVE U ALWAYS PHUGGI
+          </p>
+          <img src="image1.jpg" alt="First Meeting Photo">
+        </div>
+
+        <div class="diary-entry">
+          <h2>Our First Date</h2>
+          <p>
+            The first time we went out, I knew this was the start of something beautiful. We laughed, we talked, and time just flew by.
+          </p>
+          <img src="image2.jpg" alt="First Date Photo">
+        </div>
+
+        <div class="diary-entry">
+          <h2>Forever Together</h2>
+          <p>
+            Every anniversary reminds me of how lucky I am to have you. Here's to many more years of love, laughter, and adventures. Forever with you is where I belong. Hand in hand, we'll navigate life's journey. Through laughter and tears, our bond will strengthen. With every breath, our love will flourish. Together, we'll create a beautiful life, filled with adventure, passion, and joy. Our hearts beating as one, our love will shine brighter with each passing day. Forever and always, my love for you will endure. In your arms, I've found my home, my haven, my forever
+          </p>
+          <img src="image3.jpg" alt="Anniversary Photo">
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const music = document.getElementById('backgroundMusic');
+      const startButton = document.getElementById('startButton');
+      const content = document.getElementById('content');
+
+      // Start the experience when the user clicks the button
+      startButton.addEventListener('click', function() {
+        // Play the background music
+        music.play();
+        // Show the diary content
+        content.style.display = 'block';
+        // Hide the start button
+        startButton.style.display = 'none';
+      });
+    </script>
+  </body>
+</html>
